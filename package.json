@@ -1,0 +1,40 @@
+{
+  "name": "rocket-instance",
+  "version": "1.0.4",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.solucao.chat",
+    "productName": "Solução Chat",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.png"
+    },
+    "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": false,
+    "perMachine": true,
+    "deleteAppDataOnUninstall": false,
+    "runAfterFinish": true,
+    "displayLanguageSelector": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Solução Chat"
+  }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^37.2.6",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "auto-launch": "^5.0.6",
+    "rmdir": "^1.2.0"
+  }
+}
